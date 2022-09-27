@@ -32,6 +32,9 @@ public class Animal {
 	public String toString() {
 		String response = "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en "
 				+ this.habitat + " y mi genero es " + this.genero;
+		if(this.zona.length>0){
+			response += "la zona en la que me ubico es "+ this.zona[0].getNombre()+" , en el "+ this.zona[0].getZoo().getNombre();
+		}
 		return response;
 	};
 
